@@ -1,0 +1,33 @@
+general:
+  dt: 1.0E+5
+  tfinal: 1.0E+9
+---
+type: "sun"
+name: "Sun" # optional
+mass: 333000.0
+position:
+  - 0.0
+  - 0.0
+velocity:
+  - 0.0
+  - 0.0
+---
+type: "planet"
+name: "Earth" # optional
+mass: 1.0
+position:
+  - 1.0
+  - 0.0
+velocity:
+  - 0.0
+  - 0.017
+---
+type: "planet"
+name: "Jupiter"
+mass: 317.8
+position:
+  - 5.2
+  - 0.0
+velocity:
+  - 0.0
+  - 0.008
