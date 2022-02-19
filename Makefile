@@ -25,4 +25,5 @@ setup: requirements.txt
 
 clean:
 	rm -rf ./SolarSystem/__pycache__
-	rm -f ./output/*
+	rm -f ./output/*.txt
+	rm -f ./output/graphs/*
