@@ -1,0 +1,6 @@
+__pycache__/
+SolarSystem/__pycache__/
+output/
+
+*.py[cod]
+*$py.class

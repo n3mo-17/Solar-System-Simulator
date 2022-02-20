@@ -12,6 +12,9 @@ with open("user_config.yml", "r") as f:
 
             dt = gen["dt"]
             tfinal = gen["tfinal"]
+            dstep = gen["dstep"]
+
+            ss.set_dstep(dstep)
         else:
             name = data["name"] if "name" in data.keys() else None
             if data["type"] == "sun":

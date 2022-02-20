@@ -1,6 +1,7 @@
 general:
   dt: 1.0E+5
   tfinal: 1.0E+9
+  dstep: 10
 ---
 type: "sun"
 name: "Sun" # optional
@@ -12,10 +13,10 @@ type: "planet"
 name: "Earth" # optional
 mass: 1.0
 position: [1.0, 0.0]
-velocity: [0.0, 0.17]
+velocity: [0.0, 0.017]
 ---
 type: "planet"
-name: "Jupiter"
+name: "Jupiter" #optional
 mass: 317.8
 position: [5.2, 0.0]
 velocity: [0.0, 0.008]

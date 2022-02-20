@@ -6,11 +6,16 @@ class SolarSystem:
         self.num_bodies = 0
         self._bodies = []
         self._com = zeros(2)
+
+        self.count = 0
     
     def add_body(self, body):
         self._bodies.append(body)
         self.num_bodies += 1
         self.calc_com()
+    
+    def set_dstep(self, dstep):
+        self.dstep = dstep
     
     def calc_com(self):
         self._com *= 0.0
@@ -31,7 +36,10 @@ class SolarSystem:
             b.update(dt)
         
         self.calc_com()
-        self.write_self()
+        self.count += 1
+        if self.count == self.dstep:
+            self.write_self()
+            self.count = 0
     
     def write_self(self):
         for b in self._bodies:
